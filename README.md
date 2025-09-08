@@ -267,12 +267,12 @@ ab -n 1000 -c 10 http://<alb-dns-name>/
 
 ## 🎯 Key Achievements
 
-✅ **Secure Architecture**: Database isolated in private subnet  
-✅ **High Availability**: Multi-AZ deployment with load balancing  
-✅ **Auto Scaling**: Dynamic capacity based on demand  
-✅ **Cost Optimization**: S3 static hosting for blog content  
-✅ **Fault Tolerance**: Health checks and automatic recovery  
-✅ **SEO Enhancement**: Static blog for improved search visibility
+✅ **Multi-AZ High Availability**: Database and application tier across 2 AZs  
+✅ **Fault Tolerant Design**: Dual NAT Gateways and Multi-AZ RDS  
+✅ **Load Balanced Architecture**: ALB distributing traffic across multiple instances  
+✅ **Auto Scaling Capability**: Dynamic scaling across both availability zones  
+✅ **Database Resilience**: Primary/Standby RDS with automatic failover  
+✅ **Network Redundancy**: Multiple subnets and NAT Gateways for reliability
 
 ## 🔧 Configuration Files
 
@@ -313,36 +313,6 @@ ab -n 1000 -c 10 http://<alb-dns-name>/
 - [ ] **Logging**: Centralized logging with CloudWatch Logs
 - [ ] **CI/CD Pipeline**: Automated deployment with CodePipeline
 - [ ] **Multi-Region**: Cross-region replication for disaster recovery
-
-## 🏷️ Tags and Labels
-
-- **Environment**: Production
-- **Project**: CustomerPortal
-- **Owner**: ClientLink
-- **Cost Center**: IT-Infrastructure
-- **Backup**: Required
-
-## 📞 Support and Maintenance
-
-For issues and maintenance:
-- Monitor CloudWatch dashboards
-- Check ALB access logs
-- Review RDS performance insights
-- Validate S3 blog accessibility
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
