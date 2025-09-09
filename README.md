@@ -155,6 +155,7 @@ aws rds create-db-instance \
 ### Step 4: Web Application Deployment
 
 #### User Data Script
+
 ```bash
 #!/bin/bash
 yum update -y
@@ -164,7 +165,6 @@ yum install -y httpd php php-mysql unzip
 wget https://example.com/lab-app-php7.zip
 unzip lab-app-php7.zip -d /var/www/html/
 
-# Configure database connection
 cat > /var/www/html/config.php << EOF
 <?php
 define('DB_HOST', '${RDS_ENDPOINT}');
